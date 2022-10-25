@@ -29,4 +29,8 @@ class UseThreads {
         System.out.println("Main thread starting");
     }
 
-}
+    multithread mt = new multithread("Child1");
+
+    Thread newThread = new Thread(mt);
+    
+} 
