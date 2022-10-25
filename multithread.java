@@ -20,6 +20,7 @@ class multithread implements Runnable {  //Objects of this class can be runn
         } catch (InterruptedException exc) {
             System.out.println(thrdName + " interrupted");
         }
+        System.out.println(thrdName + "terminating.");
     }
     
 } //asdasd
