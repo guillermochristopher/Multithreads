@@ -8,6 +8,7 @@ class multithread implements Runnable {  //Objects of this class can be runn
         thrdName = name;
     }
     //Entry point of thread
+    
     public void run(){     //threating start executing here
         System.out.println(thrdName + " starting.");
         try {
@@ -23,7 +24,7 @@ class multithread implements Runnable {  //Objects of this class can be runn
         System.out.println(thrdName + "terminating.");
     }
     
-} //asdasd
+} 
 
 class UseThreads {
     public static void main (String args[]){
@@ -37,7 +38,6 @@ class UseThreads {
  
 //Run the execution of the thread
     newThread.start();
-    
 
     for (int i=0; i<50; i++){
         System.out.println(".");
