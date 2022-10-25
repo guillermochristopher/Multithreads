@@ -27,10 +27,12 @@ class multithread implements Runnable {  //Objects of this class can be runn
 class UseThreads {
     public static void main (String args[]){
         System.out.println("Main thread starting");
-    }
+    
 
     multithread mt = new multithread("Child1");
 
     Thread newThread = new Thread(mt);
     
+    newThread.start();
+    }
 } 
